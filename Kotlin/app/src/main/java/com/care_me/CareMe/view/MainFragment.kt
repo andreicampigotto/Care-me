@@ -8,7 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.care_me.CareMe.R
 import com.care_me.CareMe.viewModel.MainViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainFragment : Fragment() {
 
     companion object {

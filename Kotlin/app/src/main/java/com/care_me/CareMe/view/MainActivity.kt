@@ -5,7 +5,9 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.care_me.CareMe.R
 import com.care_me.CareMe.databinding.MainActivityBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: MainActivityBinding
@@ -21,10 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding = MainActivityBinding.inflate(layoutInflater)
 
         replaceFrag(MainFragment())
-
     }
 
     override fun onBackPressed() {}
-
-
 }

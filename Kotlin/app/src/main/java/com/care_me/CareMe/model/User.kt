@@ -3,7 +3,8 @@ package com.care_me.CareMe.model
 import java.util.*
 
 data class User(
-    val name: String,
+    val firstName: String,
+    val lastName: String,
     val age: Int,
     val weight: Float,
     val height: Int,

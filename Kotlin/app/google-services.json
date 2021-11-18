@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "293355813443",
+    "project_id": "care-me-cf041",
+    "storage_bucket": "care-me-cf041.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293355813443:android:ba120a4f3daa30076ff2f6",
+        "android_client_info": {
+          "package_name": "com.care_me.CareMe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293355813443-n9eell6fopo4onnsj3ki8shgq6ehq8kk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf6XA01xpxUnsWdMJiZhRhsZsTNOe23Sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293355813443-n9eell6fopo4onnsj3ki8shgq6ehq8kk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

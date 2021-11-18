@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -68,6 +69,7 @@ dependencies {
 // HILT
     implementation "com.google.dagger:hilt-android:2.38.1"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-database:20.0.2'
     kapt "com.google.dagger:hilt-compiler:2.37"
 // ROOM
     implementation("androidx.room:room-runtime:2.3.0")

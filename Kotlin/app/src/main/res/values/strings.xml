@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">CareMe</string>
+    <string name="medical_records_app_name">CareMe</string>
+    <string name="medical_records_medication_label">Medicações:</string>
+    <string name="medical_records_weight_label">Peso:</string>
+    <string name="medical_records_blood_pressure_label">Última aferição de pressãoo:</string>
+    <string name="medical_records_height_label">altura</string>
+
+    <string name="profile_weight">Peso</string>
+    <string name="profile_height">Altura</string>
+
+    <string name="profile_name">Nome</string>
+    <string name="profile_age">Idade</string>
+    <string name="profile_tel">Telefone</string>
+    <string name="profile_birthday">Aniversário</string>
+    <string name="emergency_phone">Telefone de emergência</string>
+    <string name="profile_city">Cidade</string>
+    <string name="profile_country">País</string>
+    <string name="button_save">Salvar</string>
 </resources>

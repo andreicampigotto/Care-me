@@ -4,7 +4,7 @@ import java.util.*
 
 data class User(
     val image: String?,
-    val fullName: String?,
+    val fullName: String,
     val birthday: Int?,
     val phone: String?,
     val emergencyPhone: String?,
@@ -14,14 +14,14 @@ data class User(
 )
 
 data class Drug(
-    val drugName: String,
+    val drugName: String?,
     val continuousUse: Boolean
 )
 
 data class Allergy(
     val allergyNAme: String?,
     val allergyDescription: String?
-        )
+)
 
 data class Appointments(
     val appointment: Date,

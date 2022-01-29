@@ -3,6 +3,7 @@ package com.care_me.CareMe.model
 import java.util.*
 
 data class Appointments(
+    val idAppointments: String,
     val appointment: Date,
     val weight: Float,
     val height: Int,

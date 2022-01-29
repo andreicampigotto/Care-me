@@ -13,24 +13,5 @@ data class User(
     val bloodType: String?
 )
 
-data class Drug(
-    val drugName: String?,
-    val continuousUse: Boolean
-)
-
-data class Allergy(
-    val allergyNAme: String?,
-    val allergyDescription: String?
-)
-
-data class Appointments(
-    val appointment: Date,
-    val weight: Float,
-    val height: Int,
-    val bloodPressure: String,
-    val comments: String?,
-    val doctor: String?
-)
-
 private val calendar = Calendar.getInstance()
 private val presentDate = calendar.time

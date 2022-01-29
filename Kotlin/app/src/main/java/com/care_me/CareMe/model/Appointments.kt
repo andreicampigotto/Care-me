@@ -11,3 +11,6 @@ data class Appointments(
     val comments: String?,
     val doctor: String?
 )
+
+private val calendar = Calendar.getInstance()
+private val presentDate = calendar.time

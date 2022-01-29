@@ -7,12 +7,14 @@
     <string name="medical_records_height_label">Altura:</string>
     <string name="medical_records_imc_label">IMC:</string>
 
-    <string name="register_medical_records_height">Altura</string>
-    <string name="register_medical_records_weight">Peso</string>
-    <string name="register_medical_records_date">12/12/2022</string>
-    <string name="register_medical_records_blood_pressure">Pressão arterial</string>
-    <string name="register_medical_records_comments">Observações</string>
-    <string name="register_medical_records_title">Como foi sua última consulta</string>
+    <string name="register_medical_appointments_height">Altura</string>
+    <string name="register_medical_appointments_weight">Peso</string>
+    <string name="register_medical_appointments_date">12/12/2022</string>
+    <string name="register_medical_appointments_blood_pressure">Pressão arterial</string>
+    <string name="register_medical_appointments_comments">Observações</string>
+    <string name="register_medical_appointments_title">Como foi sua última consulta</string>
+    <string name="register_medical_appointments_doctor">Médico</string>
+    <string name="register_medical_appointments_button_new_drug">Medicação</string>
 
     <string name="register_profile_name">Nome</string>
     <string name="register_profile_age">Idade</string>
@@ -25,6 +27,7 @@
 
     <string name="button_save">Salvar</string>
     <string name="button_new_medical_records">inserir nova consulta</string>
+
 
 
 

@@ -22,7 +22,7 @@ data class Appointments(
     val appointment: Date,
     val weight: Float,
     val height: Int,
-    val bloodPressure: String
-    val comments: String?
+    val bloodPressure: String,
+    val comments: String?,
     val doctor: String?
 )

@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/card_medical_records_button_new_medical_records"
+            android:id="@+id/card_medical_appointments_button_new_medical_appointments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -24,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/card_medical_records_date"
+            android:id="@+id/card_medical_appointments_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
@@ -33,13 +33,13 @@
             android:layout_marginTop="16dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card_medical_records_button_new_medical_records"
+            app:layout_constraintTop_toBottomOf="@+id/card_medical_appointments_button_new_medical_appointments"
             tools:text="17/07/2022 " />
 
         <TextView
-            android:id="@+id/card_medical_records_blood_pressure_label"
+            android:id="@+id/card_medical_appointments_blood_pressure_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
@@ -50,26 +50,26 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card_medical_records_date"
+            app:layout_constraintTop_toBottomOf="@+id/card_medical_appointments_date"
             tools:text="@string/medical_records_blood_pressure_label" />
 
         <TextView
-            android:id="@+id/card_medical_records_blood_pressure_value"
+            android:id="@+id/card_medical_appointments_blood_pressure_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="32dp"
             android:padding="4dp"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/card_medical_records_blood_pressure_label"
+            app:layout_constraintBottom_toBottomOf="@+id/card_medical_appointments_blood_pressure_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/card_medical_records_blood_pressure_label"
-            app:layout_constraintTop_toTopOf="@+id/card_medical_records_blood_pressure_label"
+            app:layout_constraintStart_toEndOf="@+id/card_medical_appointments_blood_pressure_label"
+            app:layout_constraintTop_toTopOf="@+id/card_medical_appointments_blood_pressure_label"
             tools:text="12/8" />
 
         <TextView
-            android:id="@+id/card_medical_records_weight_label"
+            android:id="@+id/card_medical_appointments_weight_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
@@ -80,25 +80,25 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card_medical_records_blood_pressure_label"
+            app:layout_constraintTop_toBottomOf="@+id/card_medical_appointments_blood_pressure_label"
             tools:text="@string/medical_records_weight_label" />
 
         <TextView
-            android:id="@+id/card_medical_records_weight_value"
+            android:id="@+id/card_medical_appointments_weight_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:padding="4dp"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/card_medical_records_weight_label"
+            app:layout_constraintBottom_toBottomOf="@+id/card_medical_appointments_weight_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/card_medical_records_weight_label"
-            app:layout_constraintTop_toTopOf="@+id/card_medical_records_weight_label"
+            app:layout_constraintStart_toEndOf="@+id/card_medical_appointments_weight_label"
+            app:layout_constraintTop_toTopOf="@+id/card_medical_appointments_weight_label"
             tools:text="72kg" />
 
         <TextView
-            android:id="@+id/card_medical_records_height_label"
+            android:id="@+id/card_medical_appointments_height_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -107,54 +107,54 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.16"
-            app:layout_constraintStart_toEndOf="@+id/card_medical_records_weight_value"
-            app:layout_constraintTop_toBottomOf="@+id/card_medical_records_blood_pressure_label"
+            app:layout_constraintStart_toEndOf="@+id/card_medical_appointments_weight_value"
+            app:layout_constraintTop_toBottomOf="@+id/card_medical_appointments_blood_pressure_label"
             tools:text="@string/medical_records_height_label" />
 
         <TextView
-            android:id="@+id/card_medical_records_height_value"
+            android:id="@+id/card_medical_appointments_height_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="4dp"
             android:textSize="16sp"
             android:layout_marginStart="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/card_medical_records_height_label"
-            app:layout_constraintEnd_toStartOf="@+id/card_medical_records_imc_label"
+            app:layout_constraintBottom_toBottomOf="@+id/card_medical_appointments_height_label"
+            app:layout_constraintEnd_toStartOf="@+id/card_medical_appointments_imc_label"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/card_medical_records_height_label"
-            app:layout_constraintTop_toTopOf="@+id/card_medical_records_height_label"
+            app:layout_constraintStart_toEndOf="@+id/card_medical_appointments_height_label"
+            app:layout_constraintTop_toTopOf="@+id/card_medical_appointments_height_label"
             tools:text="72kg" />
 
         <TextView
-            android:id="@+id/card_medical_records_imc_label"
+            android:id="@+id/card_medical_appointments_imc_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:padding="4dp"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/card_medical_records_weight_label"
-            app:layout_constraintEnd_toStartOf="@+id/card_medical_records_imc_value"
+            app:layout_constraintBottom_toBottomOf="@+id/card_medical_appointments_weight_label"
+            app:layout_constraintEnd_toStartOf="@+id/card_medical_appointments_imc_value"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintTop_toTopOf="@+id/card_medical_records_weight_label"
+            app:layout_constraintTop_toTopOf="@+id/card_medical_appointments_weight_label"
             tools:text="@string/medical_records_imc_label" />
 
         <TextView
-            android:id="@+id/card_medical_records_imc_value"
+            android:id="@+id/card_medical_appointments_imc_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:padding="4dp"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/card_medical_records_imc_label"
+            app:layout_constraintBottom_toBottomOf="@+id/card_medical_appointments_imc_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/card_medical_records_imc_label"
+            app:layout_constraintTop_toTopOf="@+id/card_medical_appointments_imc_label"
             tools:text="72kg" />
 
         <TextView
-            android:id="@+id/card_medical_records_medications_label"
+            android:id="@+id/card_medical_appointments_medications_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
@@ -165,12 +165,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card_medical_records_weight_label"
+            app:layout_constraintTop_toBottomOf="@+id/card_medical_appointments_weight_label"
             tools:text="@string/medical_records_medication_label" />
 
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/card_medical_records_medications_value"
+            android:id="@+id/card_medical_appointments_medications_value"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
@@ -183,7 +183,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card_medical_records_medications_label"
+            app:layout_constraintTop_toBottomOf="@+id/card_medical_appointments_medications_label"
             tools:text="teste teste teste teste teste teste teste teste teste teste teste teste." />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

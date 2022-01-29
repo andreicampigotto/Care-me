@@ -9,13 +9,13 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/fragment_register_medical_records_title"
+            android:id="@+id/fragment_register_medical_appointments_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="24dp"
             android:padding="4dp"
-            android:text="@string/register_medical_records_title"
+            android:text="@string/register_medical_appointments_title"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -25,15 +25,17 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fragment_register_medical_records_date"
+            android:id="@+id/fragment_register_medical_appointments_date"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="8dp"
-            android:hint="@string/register_medical_records_date"
+            android:hint="@string/register_medical_appointments_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_records_title">
+            app:layout_constraintTop_toBottomOf="@id/fragment_register_medical_appointments_title">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -44,15 +46,34 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fragment_register_medical_records_weight"
+            android:id="@+id/fragment_register_medical_appointments_doctor"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="8dp"
-            android:hint="@string/register_medical_records_weight"
+            android:hint="@string/register_medical_appointments_doctor"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_records_date">
+            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_appointments_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textAutoComplete"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_register_medical_appointments_weight"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:hint="@string/register_medical_appointments_weight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_appointments_doctor">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -62,16 +83,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fragment_register_medical_records_height"
+            android:id="@+id/fragment_register_medical_appointments_height"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:hint="@string/register_medical_records_height"
-            app:layout_constraintBottom_toBottomOf="@+id/fragment_register_medical_records_weight"
+            android:hint="@string/register_medical_appointments_height"
+            app:layout_constraintBottom_toBottomOf="@+id/fragment_register_medical_appointments_weight"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/fragment_register_medical_records_weight"
-            app:layout_constraintTop_toTopOf="@+id/fragment_register_medical_records_weight">
+            app:layout_constraintStart_toEndOf="@+id/fragment_register_medical_appointments_weight"
+            app:layout_constraintTop_toTopOf="@+id/fragment_register_medical_appointments_weight">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -81,15 +102,15 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fragment_register_medical_records_blood_pressure"
+            android:id="@+id/fragment_register_medical_appointments_blood_pressure"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="8dp"
-            android:hint="@string/register_medical_records_blood_pressure"
+            android:hint="@string/register_medical_appointments_blood_pressure"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_records_weight">
+            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_appointments_weight">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -99,15 +120,16 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fragment_register_medical_records_comments"
+            android:id="@+id/fragment_register_medical_appointments_comments"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
+            app:startIconDrawable=""
             android:layout_marginTop="8dp"
-            android:hint="@string/register_medical_records_comments"
+            android:hint="@string/register_medical_appointments_comments"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_records_blood_pressure">
+            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_appointments_blood_pressure">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -117,9 +139,20 @@
                 android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fragment_register_medical_appointments_button_new_drug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/register_medical_appointments_button_new_drug"
+            android:layout_marginHorizontal="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_appointments_comments" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/fragment_register_medical_records_button_save"
+            android:id="@+id/fragment_register_medical_appointments_button_save"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginHorizontal="16dp"
@@ -129,7 +162,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_records_comments"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_register_medical_appointments_button_new_drug"
             app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,19 +1,31 @@
 <resources>
     <string name="medical_records_app_name">CareMe</string>
+
     <string name="medical_records_medication_label">Medicações:</string>
     <string name="medical_records_weight_label">Peso:</string>
-    <string name="medical_records_blood_pressure_label">Última aferição de pressãoo:</string>
-    <string name="medical_records_height_label">altura</string>
+    <string name="medical_records_blood_pressure_label">Última aferição de pressão:</string>
+    <string name="medical_records_height_label">Altura:</string>
+    <string name="medical_records_imc_label">IMC:</string>
 
-    <string name="profile_weight">Peso</string>
-    <string name="profile_height">Altura</string>
+    <string name="register_medical_records_height">Altura</string>
+    <string name="register_medical_records_weight">Peso</string>
+    <string name="register_medical_records_date">12/12/2022</string>
+    <string name="register_medical_records_blood_pressure">Pressão arterial</string>
+    <string name="register_medical_records_comments">Observações</string>
+    <string name="register_medical_records_title">Como foi sua última consulta</string>
 
-    <string name="profile_name">Nome</string>
-    <string name="profile_age">Idade</string>
-    <string name="profile_tel">Telefone</string>
-    <string name="profile_birthday">Aniversário</string>
-    <string name="emergency_phone">Telefone de emergência</string>
-    <string name="profile_city">Cidade</string>
-    <string name="profile_country">País</string>
+    <string name="register_profile_name">Nome</string>
+    <string name="register_profile_age">Idade</string>
+    <string name="register_profile_tel">Telefone</string>
+    <string name="register_profile_birthday">Aniversário</string>
+    <string name="register_profile_emergency_phone">Telefone de emergência</string>
+    <string name="register_profile_city">Cidade</string>
+    <string name="register_profile_country">País</string>
+    <string name="register_profile_blood_type">Tipo sanguíneo</string>
+
     <string name="button_save">Salvar</string>
+    <string name="button_new_medical_records">inserir nova consulta</string>
+
+
+
 </resources>

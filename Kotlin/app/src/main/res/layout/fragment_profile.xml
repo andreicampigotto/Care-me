@@ -9,7 +9,7 @@
         android:layout_height="wrap_content">
 
         <com.mikhaellopez.circularimageview.CircularImageView
-            android:id="@+id/login_icon"
+            android:id="@+id/fragment_profile_login_icon"
             android:layout_width="130dp"
             android:layout_height="130dp"
             app:civ_border_color="#3f51b5"
@@ -25,9 +25,9 @@
             android:id="@+id/fragment_profile_image_name"
             android:layout_width="36dp"
             android:layout_height="36dp"
-            android:importantForAccessibility="no"
-            android:background="@drawable/ic_baseline_person_24"
             android:layout_marginStart="16dp"
+            android:background="@drawable/ic_baseline_person_24"
+            android:importantForAccessibility="no"
             app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -40,29 +40,29 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginTop="8dp"
-            android:hint="@string/profile_name"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/register_profile_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/fragment_profile_image_name"
-            app:layout_constraintTop_toBottomOf="@+id/login_icon">
+            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_login_icon">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
             android:id="@+id/fragment_profile_image_phone"
             android:layout_width="36dp"
             android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/ic_baseline_phone_24"
             android:importantForAccessibility="no"
             android:padding="16dp"
-            android:layout_marginStart="16dp"
             app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_phone"
             app:layout_constraintEnd_toEndOf="parent"
-            android:background="@drawable/ic_baseline_phone_24"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/fragment_profile_phone" />
@@ -70,11 +70,12 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_profile_phone"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="0dp"
+            android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="@string/profile_tel"
+            android:hint="@string/register_profile_tel"
             app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/fragment_profile_name"
             app:layout_constraintTop_toBottomOf="@+id/fragment_profile_name">
 
@@ -84,13 +85,31 @@
                 android:inputType="phone" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_profile_blood_type"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/register_profile_blood_type"
+            app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/fragment_profile_phone"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <ImageView
             android:id="@+id/fragment_profile_image_birthday"
             android:layout_width="36dp"
             android:layout_height="36dp"
-            android:importantForAccessibility="no"
             android:layout_marginStart="16dp"
             android:background="@drawable/ic_baseline_cake_24"
+            android:importantForAccessibility="no"
             app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_birthday"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -103,9 +122,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="@string/profile_birthday"
-            app:endIconMode="custom"
+            android:hint="@string/register_profile_birthday"
             app:endIconDrawable="@drawable/ic_baseline_calendar_today_24"
+            app:endIconMode="custom"
             app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/fragment_profile_name"
@@ -114,16 +133,20 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="date" />
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:inputType="none"
+                android:textSize="16sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
             android:id="@+id/fragment_profile_image_city"
             android:layout_width="36dp"
             android:layout_height="36dp"
+            android:layout_marginStart="16dp"
             android:background="@drawable/ic_baseline_location_on_24"
             android:importantForAccessibility="no"
-            android:layout_marginStart="16dp"
             app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_city"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -133,10 +156,10 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_profile_city"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_height="wrap_content"
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="@string/profile_city"
+            android:hint="@string/register_profile_city"
             app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
             app:layout_constraintStart_toStartOf="@+id/fragment_profile_name"
             app:layout_constraintTop_toBottomOf="@+id/fragment_profile_birthday">
@@ -144,16 +167,16 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="textAutoComplete" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
             android:id="@+id/fragment_profile_image_country"
             android:layout_width="36dp"
             android:layout_height="36dp"
+            android:layout_marginStart="16dp"
             android:background="@drawable/ic_baseline_map_24"
             android:importantForAccessibility="no"
-            android:layout_marginStart="16dp"
             app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_country"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -166,7 +189,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="@string/profile_country"
+            android:hint="@string/register_profile_country"
             app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
             app:layout_constraintStart_toStartOf="@+id/fragment_profile_name"
             app:layout_constraintTop_toBottomOf="@+id/fragment_profile_city">
@@ -174,16 +197,16 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text" />
+                android:inputType="textAutoComplete" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageView
             android:id="@+id/fragment_profile_image_emergency_phone"
             android:layout_width="36dp"
             android:layout_height="36dp"
-            android:importantForAccessibility="no"
-            android:background="@drawable/ic_baseline_local_hospital_24"
             android:layout_marginStart="16dp"
+            android:background="@drawable/ic_baseline_local_hospital_24"
+            android:importantForAccessibility="no"
             app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_emergency_phone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -194,9 +217,9 @@
             android:id="@+id/fragment_profile_emergency_phone"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
-            android:layout_marginTop="8dp"
             android:layout_height="wrap_content"
-            android:hint="@string/emergency_phone"
+            android:layout_marginTop="8dp"
+            android:hint="@string/register_profile_emergency_phone"
             app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
             app:layout_constraintStart_toStartOf="@+id/fragment_profile_name"
             app:layout_constraintTop_toBottomOf="@+id/fragment_profile_country">
@@ -214,9 +237,11 @@
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="16dp"
             android:text="@string/button_save"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fragment_profile_emergency_phone" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

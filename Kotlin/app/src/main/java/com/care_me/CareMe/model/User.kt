@@ -18,6 +18,11 @@ data class Drug(
     val continuousUse: Boolean
 )
 
+data class allergy(
+    val allergyNAme: String?,
+    val allergyDescription: String?
+        )
+
 data class Appointments(
     val appointment: Date,
     val weight: Float,

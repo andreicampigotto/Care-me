@@ -18,7 +18,7 @@ data class Drug(
     val continuousUse: Boolean
 )
 
-data class allergy(
+data class Allergy(
     val allergyNAme: String?,
     val allergyDescription: String?
         )

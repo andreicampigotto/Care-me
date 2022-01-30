@@ -9,9 +9,15 @@
         <entry key="app/src/main/res/layout/card_chart.xml" value="0.2713541666666667" />
         <entry key="app/src/main/res/layout/card_login.xml" value="0.2713541666666667" />
         <entry key="app/src/main/res/layout/card_medicacoes.xml" value="0.2713541666666667" />
+        <entry key="app/src/main/res/layout/card_medical_appointments.xml" value="0.375" />
         <entry key="app/src/main/res/layout/card_medical_records.xml" value="0.375" />
         <entry key="app/src/main/res/layout/date_picker.xml" value="0.2734375" />
+        <entry key="app/src/main/res/layout/fragment_appintments.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/fragment_appoiments.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_appointments.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_my_profile.xml" value="0.4383561643835616" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_register_medical_appointment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_register_medical_records.xml" value="0.2713541666666667" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.21979166666666666" />
         <entry key="app/src/main/res/layout/main_fragment.xml" value="0.165625" />

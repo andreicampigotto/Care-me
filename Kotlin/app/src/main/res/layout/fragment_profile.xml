@@ -205,7 +205,7 @@
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_marginStart="16dp"
-            android:background="@drawable/ic_baseline_local_hospital_24"
+            android:background="@drawable/ic_baseline_emergency_24"
             android:importantForAccessibility="no"
             app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_emergency_phone"
             app:layout_constraintEnd_toEndOf="parent"

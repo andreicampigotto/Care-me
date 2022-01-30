@@ -9,8 +9,9 @@ data class Appointments(
     val height: Int,
     val bloodPressure: String,
     val comments: String?,
-    val doctor: String?
+    val doctor: String?,
+    private val calendar: Calendar = Calendar.getInstance(),
+    val presentDate: Date = calendar.time
 )
 
-private val calendar = Calendar.getInstance()
-private val presentDate = calendar.time
+

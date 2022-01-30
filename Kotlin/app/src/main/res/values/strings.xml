@@ -27,8 +27,8 @@
 
     <string name="button_save">Salvar</string>
     <string name="button_new_medical_records">inserir nova consulta</string>
-
-
-
+    <string name="register_medical_appointments_button_new_allergy">Alergias</string>
+    <string name="medical_appointments_doctor_label">Médico</string>
+    <string name="alergiasmedical_appointments_allergy_label">Alergias</string>
 
 </resources>

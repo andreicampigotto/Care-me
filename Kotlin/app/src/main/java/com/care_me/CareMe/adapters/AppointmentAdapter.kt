@@ -28,13 +28,14 @@ class AppointmentAdapter :
 
 class AppointmentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    private val binding: CardMedicalAppointmentsBinding = CardMedicalAppointmentsBinding.bind(itemView)
+    private val binding: CardMedicalAppointmentsBinding =
+        CardMedicalAppointmentsBinding.bind(itemView)
 
     fun bind(appointments: Appointments) {
         binding.cardMedicalAppointmentsDate.text = appointments.presentDate.toString()
+        binding.cardMedicalAppointmentsDoctorValue.text = appointments.doctor
         binding.cardMedicalAppointmentsHeightLabel.text = appointments.bloodPressure
         binding.cardMedicalAppointmentsHeightValue.text = appointments.height.toString()
         binding.cardMedicalAppointmentsWeightValue.text = appointments.weight.toString()
-        binding.c
     }
 }

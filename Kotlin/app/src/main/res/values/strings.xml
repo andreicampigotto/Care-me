@@ -30,5 +30,6 @@
     <string name="register_medical_appointments_button_new_allergy">Alergias</string>
     <string name="medical_appointments_doctor_label">Médico</string>
     <string name="alergiasmedical_appointments_allergy_label">Alergias</string>
+    <string name="medical_appointments_disease_label">Doenças</string>
 
 </resources>

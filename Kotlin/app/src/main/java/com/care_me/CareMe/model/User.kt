@@ -9,6 +9,5 @@ data class User(
     val emergencyPhone: String?,
     val city: String?,
     val country: String?,
-    val bloodType: String?,
-    val allergy: List<Allergy>
+    val bloodType: String?
 )

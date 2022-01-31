@@ -5,6 +5,7 @@ import java.util.*
 data class PatientRecord (
     val idPatientRecord: String,
     val user: User,
-    val allergy: List<Allergy>,
-    val medicalVisit: List<Date>
+    val disease: List<Disease>,
+    val medicalVisit: List<Date>,
+    val appointments: List<Appointments>
 )

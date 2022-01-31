@@ -10,4 +10,6 @@ class Disease(
     @ColumnInfo(name = "idDisease")
     val idDisease: String,
     val diseaseName: String?,
-)
+    val diseaseDescription: String?,
+
+    )

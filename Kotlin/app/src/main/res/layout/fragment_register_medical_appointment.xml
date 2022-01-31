@@ -175,7 +175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
-            android:text="@string/egister_medical_appointments_button_new_disease"
+            android:text="@string/register_medical_appointments_button_new_disease"
             app:icon="@drawable/ic_baseline_sick_24"
             app:layout_constraintBottom_toBottomOf="@id/fragment_register_medical_appointments_blood_pressure"
             app:layout_constraintEnd_toEndOf="parent"

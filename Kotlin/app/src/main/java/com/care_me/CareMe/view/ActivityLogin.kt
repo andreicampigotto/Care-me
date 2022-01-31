@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.care_me.CareMe.R
 import com.care_me.CareMe.databinding.ActivityLoginBinding
+import com.care_me.CareMe.model.User
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -27,5 +28,12 @@ class ActivityLogin : AppCompatActivity(R.layout.activity_login) {
         binding.cardEntry.loginHi.setOnClickListener{
             startActivity(Intent(this, ActivitySplash::class.java))
         }
+    }
+
+    fun bind(user: User){
+        binding.cardEntry.loginHi.text = user.fullName
+        binding.cardEntry.loginBloodType.text = user.bloodType
+        binding.cardEntry.loginEmergencyPhone.text = user.emergencyPhone
+        //binding.cardEntry.loginIcon. = user.fullName
     }
 }

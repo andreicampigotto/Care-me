@@ -15,6 +15,11 @@
     <string name="register_medical_appointments_title">Como foi sua última consulta</string>
     <string name="register_medical_appointments_doctor">Médico</string>
     <string name="register_medical_appointments_button_new_drug">Medicação</string>
+    <string name="register_medical_appointments_button_new_allergy">Alergias</string>
+    <string name="register_medical_appointments_doctor_label">Médico</string>
+    <string name="register_medical_appointments_allergy_label">Alergias</string>
+    <string name="register_medical_appointments_disease_label">Doenças</string>
+    <string name="register_medical_appointments_button_new_disease">Doença</string>
 
     <string name="register_profile_name">Nome</string>
     <string name="register_profile_age">Idade</string>
@@ -27,9 +32,14 @@
 
     <string name="button_save">Salvar</string>
     <string name="button_new_medical_records">inserir nova consulta</string>
-    <string name="register_medical_appointments_button_new_allergy">Alergias</string>
-    <string name="medical_appointments_doctor_label">Médico</string>
-    <string name="alergiasmedical_appointments_allergy_label">Alergias</string>
-    <string name="medical_appointments_disease_label">Doenças</string>
+    <string name="allergy_name">Nome da alergia</string>
+    <string name="allergy_description">Descrição da alergia</string>
+    <string name="disease_name">Nome da Doença</string>
+    <string name="disease_description">Descrição da doença</string>
+
+    <string name="menu_historic">Historico</string>
+    <string name="menu_disease">Doenças</string>
+    <string name="menu_profile">Perfil</string>
+
 
 </resources>

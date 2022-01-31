@@ -10,6 +10,5 @@ data class User(
     val city: String?,
     val country: String?,
     val bloodType: String?,
-    val allergy: List<Allergy>,
-    val patientRecord: List<PatientRecord>
+    val allergy: List<Allergy>
 )

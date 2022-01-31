@@ -7,6 +7,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:id="@+id/historic"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp">
 
@@ -30,7 +31,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/card_medical_appointments_button_new_medical_appointments" />
+            app:layout_constraintTop_toBottomOf="@id/card_medical_appointments_button_new_medical_appointments" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

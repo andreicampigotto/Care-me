@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/menu_historic"
+        android:enabled="true"
+        android:title="@string/menu_historic"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"/>
+    <item
+        android:id="@+id/menu_disease"
+        android:enabled="true"
+        android:title="@string/menu_disease"
+        android:icon="@drawable/ic_baseline_sick_24"/>
+    <item
+        android:id="@+id/menu_profile"
+        android:enabled="true"
+        android:title="@string/menu_profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
 </menu>

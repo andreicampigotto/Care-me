@@ -11,6 +11,7 @@ import com.care_me.CareMe.model.Appointments
 
 class AppointmentAdapter :
     ListAdapter<Appointments, RecyclerView.ViewHolder>(AppointmentDiffCallback()) {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         LayoutInflater.from(parent.context)
             .inflate(R.layout.card_medical_appointments, parent, false).apply {

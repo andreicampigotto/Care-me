@@ -10,5 +10,6 @@ data class Drug(
     @ColumnInfo(name = "idDrug")
     val idDrug: String,
     val drugName: String?,
-    val continuousUse: Boolean
+    val drugDescription: String?,
+    val continuousUse: Boolean = true
 )

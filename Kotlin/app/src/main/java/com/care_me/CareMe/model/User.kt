@@ -10,6 +10,7 @@ data class User(
     @ColumnInfo(name = "idUser")
     val idUser: String,
     val image: String?,
+    val icon: String?
     val fullName: String,
     val birthday: Int?,
     val phone: String?,

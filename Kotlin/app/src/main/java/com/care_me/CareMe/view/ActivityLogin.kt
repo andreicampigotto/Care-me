@@ -32,8 +32,9 @@ class ActivityLogin : AppCompatActivity(R.layout.activity_login) {
 
     fun bind(user: User){
         binding.cardEntry.loginHi.text = user.fullName
+        //binding.cardEntry.loginIcon. = user.fullName
         binding.cardEntry.loginBloodType.text = user.bloodType
         binding.cardEntry.loginEmergencyPhone.text = user.emergencyPhone
-        //binding.cardEntry.loginIcon. = user.fullName
+
     }
 }

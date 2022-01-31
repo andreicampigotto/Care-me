@@ -11,7 +11,7 @@ package com.care_me.CareMe.view
 //import dagger.hilt.android.AndroidEntryPoint
 //
 //@AndroidEntryPoint
-//class MainFragment : Fragment() {
+//class MainFragment : Fragment(R.layout.main_fragment) {
 //
 //    companion object {
 //        fun newInstance() = MainFragment()
@@ -22,9 +22,7 @@ package com.care_me.CareMe.view
 //    override fun onCreateView(
 //        inflater: LayoutInflater, container: ViewGroup?,
 //        savedInstanceState: Bundle?
-//    ): View {
-//        return inflater.inflate(R.layout.main_fragment, container, false)
-//    }
+//    )
 //
 //    override fun onActivityCreated(savedInstanceState: Bundle?) {
 //        super.onActivityCreated(savedInstanceState)

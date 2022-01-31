@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:id="@+id/profile"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,11 +29,11 @@
             android:layout_marginStart="16dp"
             android:background="@drawable/ic_baseline_person_24"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_name"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_profile_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/fragment_profile_name" />
+            app:layout_constraintTop_toTopOf="@id/fragment_profile_name" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_profile_name"
@@ -44,8 +45,8 @@
             android:layout_marginEnd="16dp"
             android:hint="@string/register_profile_name"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/fragment_profile_image_name"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_login_icon">
+            app:layout_constraintStart_toEndOf="@id/fragment_profile_image_name"
+            app:layout_constraintTop_toBottomOf="@id/fragment_profile_login_icon">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -61,11 +62,11 @@
             android:background="@drawable/ic_baseline_phone_24"
             android:importantForAccessibility="no"
             android:padding="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_phone"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_profile_phone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/fragment_profile_phone" />
+            app:layout_constraintTop_toTopOf="@id/fragment_profile_phone" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_profile_phone"
@@ -74,10 +75,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="@string/register_profile_tel"
-            app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
+            app:layout_constraintEnd_toEndOf="@id/fragment_profile_name"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/fragment_profile_name"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_name">
+            app:layout_constraintStart_toStartOf="@id/fragment_profile_name"
+            app:layout_constraintTop_toBottomOf="@id/fragment_profile_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -92,10 +93,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="@string/register_profile_blood_type"
-            app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
+            app:layout_constraintEnd_toEndOf="@id/fragment_profile_name"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/fragment_profile_phone"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_name">
+            app:layout_constraintStart_toEndOf="@id/fragment_profile_phone"
+            app:layout_constraintTop_toBottomOf="@id/fragment_profile_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -110,11 +111,11 @@
             android:layout_marginStart="16dp"
             android:background="@drawable/ic_baseline_cake_24"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_birthday"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_profile_birthday"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/fragment_profile_birthday" />
+            app:layout_constraintTop_toTopOf="@id/fragment_profile_birthday" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_profile_birthday"
@@ -125,10 +126,10 @@
             android:hint="@string/register_profile_birthday"
             app:endIconDrawable="@drawable/ic_baseline_calendar_today_24"
             app:endIconMode="custom"
-            app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
+            app:layout_constraintEnd_toEndOf="@id/fragment_profile_name"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/fragment_profile_name"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_phone">
+            app:layout_constraintStart_toStartOf="@id/fragment_profile_name"
+            app:layout_constraintTop_toBottomOf="@id/fragment_profile_phone">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -147,11 +148,11 @@
             android:layout_marginStart="16dp"
             android:background="@drawable/ic_baseline_location_on_24"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_city"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_profile_city"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/fragment_profile_city" />
+            app:layout_constraintTop_toTopOf="@id/fragment_profile_city" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_profile_city"
@@ -160,9 +161,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="@string/register_profile_city"
-            app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
-            app:layout_constraintStart_toStartOf="@+id/fragment_profile_name"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_birthday">
+            app:layout_constraintEnd_toEndOf="@id/fragment_profile_name"
+            app:layout_constraintStart_toStartOf="@id/fragment_profile_name"
+            app:layout_constraintTop_toBottomOf="@id/fragment_profile_birthday">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -177,11 +178,11 @@
             android:layout_marginStart="16dp"
             android:background="@drawable/ic_baseline_map_24"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_country"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_profile_country"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/fragment_profile_country" />
+            app:layout_constraintTop_toTopOf="@id/fragment_profile_country" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_profile_country"
@@ -190,9 +191,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="@string/register_profile_country"
-            app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
-            app:layout_constraintStart_toStartOf="@+id/fragment_profile_name"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_city">
+            app:layout_constraintEnd_toEndOf="@id/fragment_profile_name"
+            app:layout_constraintStart_toStartOf="@id/fragment_profile_name"
+            app:layout_constraintTop_toBottomOf="@id/fragment_profile_city">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -207,11 +208,11 @@
             android:layout_marginStart="16dp"
             android:background="@drawable/ic_baseline_emergency_24"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_emergency_phone"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_profile_emergency_phone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/fragment_profile_emergency_phone" />
+            app:layout_constraintTop_toTopOf="@id/fragment_profile_emergency_phone" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_profile_emergency_phone"
@@ -220,9 +221,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="@string/register_profile_emergency_phone"
-            app:layout_constraintEnd_toEndOf="@+id/fragment_profile_name"
-            app:layout_constraintStart_toStartOf="@+id/fragment_profile_name"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_country">
+            app:layout_constraintEnd_toEndOf="@id/fragment_profile_name"
+            app:layout_constraintStart_toStartOf="@id/fragment_profile_name"
+            app:layout_constraintTop_toBottomOf="@id/fragment_profile_country">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -241,7 +242,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_emergency_phone" />
+            app:layout_constraintTop_toBottomOf="@id/fragment_profile_emergency_phone" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

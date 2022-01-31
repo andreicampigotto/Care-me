@@ -34,9 +34,9 @@
             app:civ_border_color="#3f51b5"
             app:civ_border_width="4dp"
             app:civ_shadow_radius="10dp"
-            app:layout_constraintEnd_toEndOf="@+id/login_hi"
-            app:layout_constraintStart_toStartOf="@+id/login_hi"
-            app:layout_constraintTop_toBottomOf="@+id/login_hi" />
+            app:layout_constraintEnd_toEndOf="@id/login_hi"
+            app:layout_constraintStart_toStartOf="@id/login_hi"
+            app:layout_constraintTop_toBottomOf="@id/login_hi" />
 
         <TextView
             android:id="@+id/login_age"
@@ -46,9 +46,9 @@
             android:layout_marginEnd="16dp"
             android:padding="4dp"
             android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/login_blood_type"
+            app:layout_constraintEnd_toStartOf="@id/login_blood_type"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintTop_toBottomOf="@+id/login_icon"
+            app:layout_constraintTop_toBottomOf="@id/login_icon"
             tools:text="idade" />
 
         <TextView
@@ -58,11 +58,11 @@
             android:layout_marginHorizontal="24dp"
             android:padding="4dp"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/login_age"
+            app:layout_constraintBottom_toBottomOf="@id/login_age"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/login_age"
+            app:layout_constraintTop_toTopOf="@id/login_age"
             tools:text="tipo sanquineo" />
 
         <TextView
@@ -72,11 +72,11 @@
             android:padding="4dp"
             android:textSize="16sp"
             android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/login_blood_type"
+            app:layout_constraintBottom_toBottomOf="@id/login_blood_type"
             app:layout_constraintEnd_toEndOf="@+id/login_icon"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/login_blood_type"
-            app:layout_constraintTop_toTopOf="@+id/login_blood_type"
+            app:layout_constraintStart_toEndOf="@id/login_blood_type"
+            app:layout_constraintTop_toTopOf="@id/login_blood_type"
             tools:text="peso" />
 
         <TextView
@@ -89,18 +89,18 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_blood_type" />
+            app:layout_constraintTop_toBottomOf="@id/login_blood_type" />
 
         <ImageView
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/ic_baseline_emergency_24"
-            app:layout_constraintBottom_toBottomOf="@+id/login_emergency_phone"
-            app:layout_constraintEnd_toStartOf="@+id/login_emergency_phone"
+            app:layout_constraintBottom_toBottomOf="@id/login_emergency_phone"
+            app:layout_constraintEnd_toStartOf="@id/login_emergency_phone"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/login_emergency_phone" />
+            app:layout_constraintTop_toTopOf="@id/login_emergency_phone" />
 
         <TextView
             android:id="@+id/login_emergency_phone"
@@ -113,7 +113,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_emergency_label"
+            app:layout_constraintTop_toBottomOf="@id/login_emergency_label"
             tools:text="(47)99999-9999" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

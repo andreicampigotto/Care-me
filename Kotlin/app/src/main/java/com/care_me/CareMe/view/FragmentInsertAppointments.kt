@@ -3,20 +3,25 @@ package com.care_me.CareMe.view
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.care_me.CareMe.R
 import com.care_me.CareMe.databinding.FragmentRegisterMedicalAppointmentBinding
 import com.care_me.CareMe.model.Appointments
+import com.care_me.CareMe.viewModel.AppointmentsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class FragmentInsertAppointments : Fragment(R.layout.fragment_register_medical_appointment) {
 
     private lateinit var binding: FragmentRegisterMedicalAppointmentBinding
+    private lateinit var viewModel: AppointmentsViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding = FragmentRegisterMedicalAppointmentBinding.bind(view)
+        viewModel = ViewModelProvider(this)[AppointmentsViewModel::class.java]
+        settingForm()
 
     }
 
@@ -37,11 +42,26 @@ class FragmentInsertAppointments : Fragment(R.layout.fragment_register_medical_a
             val weight = binding.fragmentRegisterMedicalAppointmentsWeight.editText
 
             if (doctor?.text?.isNotEmpty()!! && bloodPressure?.text.toString()
-                    .isNotEmpty()!! && comments?.text.toString()!!.isNotEmpty() && height?.text.toString()!!.isNotEmpty()  && weight?.text.toString()!!.isNotEmpty()
+                    .isNotEmpty()!! && comments?.text.toString()!!
+                    .isNotEmpty() && height?.text.toString()!!
+                    .isNotEmpty() && weight?.text.toString()!!.isNotEmpty()
             ) {
-//                viewmodel
+                /**
+                 * somente setar os valores
+                 */
+                viewModel.setAppointment(
+                    Appointments(
+                        0,
+                        appointment =,
+                        weight = ,
+                        bloodPressure =,
+                        height = ,
+                        comments = ,
+                        doctor = ,
+                        presentDate =
+                    )
+                )
             }
-
         }
     }
 

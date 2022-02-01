@@ -7,17 +7,16 @@ import java.util.*
 
 @Entity
 data class Appointments(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "idAppointments")
-    val idAppointments: String,
-    val appointment: Date,
+    val idAppointments: Int,
+    val appointment: String,
     val weight: Float,
     val height: Int,
     val bloodPressure: String,
     val comments: String?,
     val doctor: String?,
-    private val calendar: Calendar = Calendar.getInstance(),
-    val presentDate: Date = calendar.time
+    val presentDate: String
 )
 
 

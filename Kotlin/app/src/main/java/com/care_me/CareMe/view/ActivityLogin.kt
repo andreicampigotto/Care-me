@@ -20,17 +20,15 @@ class ActivityLogin : AppCompatActivity(R.layout.activity_login) {
         openApp()
     }
 
-    private fun openApp(){
+    private fun openApp() {
         binding.cardEntry.loginIcon.setOnClickListener {
-            startActivity(Intent(this, ActivitySplash::class.java))
-        }
-
-        binding.cardEntry.loginHi.setOnClickListener{
-            startActivity(Intent(this, ActivitySplash::class.java))
+            startActivity(
+                Intent(this, MainActivity::class.java)
+            )
         }
     }
 
-    fun bind(user: User){
+    fun bind(user: User) {
         binding.cardEntry.loginHi.text = user.fullName
         //binding.cardEntry.loginIcon. = user.fullName
         binding.cardEntry.loginBloodType.text = user.bloodType

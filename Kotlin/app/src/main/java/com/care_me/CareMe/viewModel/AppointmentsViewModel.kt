@@ -6,11 +6,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.care_me.CareMe.model.Appointments
 import com.care_me.CareMe.repository.AppointmentRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
+@HiltViewModel
 class AppointmentsViewModel @Inject constructor(private val repository: AppointmentRepository) :
     ViewModel() {
 

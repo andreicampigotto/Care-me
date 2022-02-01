@@ -21,25 +21,25 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = MainActivityBinding.inflate(layoutInflater)
-
-         findViewById<BottomNavigationView>(R.id.bottom_navigation).apply {
-            setOnItemSelectedListener { item ->
-                when (item.itemId) {
-                    R.id.profile -> {
-                        //replaceFrag(DrinkFragment())
-                        true
-                    }
-                    R.id.historic -> {
-                        //replaceFrag(BeerFragment())
-                        true
-                    }
-//                    R.id.disease ->{
-//
+        replaceFrag(FragmentInsertAppointments())
+//         findViewById<BottomNavigationView>(R.id.bottom_navigation).apply {
+//            setOnItemSelectedListener { item ->
+//                when (item.itemId) {
+//                    R.id.profile -> {
+//                        //replaceFrag(DrinkFragment())
+//                        true
 //                    }
-                    else -> false
-                }
-            }
-        }
+//                    R.id.historic -> {
+//                        //replaceFrag(BeerFragment())
+//                        true
+//                    }
+////                    R.id.disease ->{
+////
+////                    }
+//                    else -> false
+//                }
+//            }
+//        }
     }
 
     override fun onBackPressed() {}

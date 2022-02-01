@@ -9,6 +9,7 @@ import com.care_me.CareMe.databinding.FragmentRegisterMedicalAppointmentBinding
 import com.care_me.CareMe.model.Appointments
 import com.care_me.CareMe.viewModel.AppointmentsViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import java.util.*
 
 @AndroidEntryPoint
 class FragmentInsertAppointments : Fragment(R.layout.fragment_register_medical_appointment) {
@@ -52,13 +53,13 @@ class FragmentInsertAppointments : Fragment(R.layout.fragment_register_medical_a
                 viewModel.setAppointment(
                     Appointments(
                         0,
-                        appointment =,
-                        weight = ,
-                        bloodPressure =,
-                        height = ,
-                        comments = ,
-                        doctor = ,
-                        presentDate =
+                        appointment = Calendar.getInstance().toString(),
+                        weight = binding.etWeigth.text.toString().toFloat(),
+                        bloodPressure = binding.etBlood.text.toString(),
+                        height = binding.etHeight.text.toString().toInt(),
+                        comments = binding.etDesc.text.toString(),
+                        doctor = binding.etDoctor.text.toString(),
+                        presentDate = Calendar.getInstance().toString()
                     )
                 )
             }

@@ -4,12 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.care_me.CareMe.model.Allergy
-import com.care_me.CareMe.model.Drug
-import com.care_me.CareMe.model.User
+import com.care_me.CareMe.model.*
 
 @Database(
-    entities = [User::class, Drug::class, Allergy:class, Disease::class ],
+    entities = [User::class, Drug::class, Allergy::class, Disease::class, Doctor::class, Appointments::class ],
     version = 1
 )
 abstract class AppDatabase : RoomDatabase() {

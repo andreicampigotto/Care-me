@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/fragment_appintments.xml" value="0.45" />
         <entry key="app/src/main/res/layout/fragment_appoiments.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_appointments.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_disease.xml" value="0.2159042325780248" />
         <entry key="app/src/main/res/layout/fragment_insert_allergy.xml" value="0.24112868747327917" />
         <entry key="app/src/main/res/layout/fragment_insert_disease.xml" value="0.24112868747327917" />
         <entry key="app/src/main/res/layout/fragment_insert_drug.xml" value="0.24112868747327917" />

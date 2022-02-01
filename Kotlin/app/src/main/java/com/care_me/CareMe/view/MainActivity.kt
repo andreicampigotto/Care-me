@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                     replaceFrag(FragmentInsertAppointments())
                     true
                 }
-//                    R.id.disease ->{
+//                    R.id.user ->{
 //
 //                    }
                 else -> false

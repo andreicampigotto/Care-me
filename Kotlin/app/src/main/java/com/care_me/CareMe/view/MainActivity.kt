@@ -25,12 +25,12 @@ class MainActivity : AppCompatActivity() {
         replaceFrag(FragmentInsertAppointments())
         binding.bottomNavigation.setOnItemSelectedListener {
             when (it.itemId) {
-                R.id.profile -> {
-                    replaceFrag(FragmentInsertAppointments())
+                R.id.menu_historic -> {
+                    replaceFrag(FragmentAppointments())
                     true
                 }
-                R.id.historic -> {
-                    replaceFrag(FragmentAppointments())
+                R.id.menu_disease -> {
+                    replaceFrag(FragmentInsertAppointments())
                     true
                 }
 //                    R.id.disease ->{

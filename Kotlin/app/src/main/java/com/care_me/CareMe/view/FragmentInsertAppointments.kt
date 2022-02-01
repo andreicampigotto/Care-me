@@ -53,13 +53,13 @@ class FragmentInsertAppointments : Fragment(R.layout.fragment_register_medical_a
                 viewModel.setAppointment(
                     Appointments(
                         0,
-                        appointment = Calendar.getInstance().toString(),
+                        appointment = "01/02/2022",
                         weight = binding.etWeigth.text.toString().toFloat(),
                         bloodPressure = binding.etBlood.text.toString(),
                         height = binding.etHeight.text.toString().toInt(),
                         comments = binding.etDesc.text.toString(),
                         doctor = binding.etDoctor.text.toString(),
-                        presentDate = Calendar.getInstance().toString()
+                        presentDate = "01/02/2022"
                     )
                 )
             }

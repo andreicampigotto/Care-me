@@ -10,20 +10,24 @@ import com.care_me.CareMe.databinding.CardMedicalAppointmentsBinding
 import com.care_me.CareMe.model.Appointments
 
 class AppointmentAdapter :
-    ListAdapter<Appointments, RecyclerView.ViewHolder>(AppointmentDiffCallback()) {
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    ListAdapter<Appointments, AppointmentViewHolder>(AppointmentDiffCallback()) {
+    private val appointmentsList = mutableListOf<Appointments>()
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AppointmentViewHolder {
         LayoutInflater.from(parent.context)
             .inflate(R.layout.card_medical_appointments, parent, false).apply {
                 return AppointmentViewHolder(this)
             }
     }
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: AppointmentViewHolder, position: Int) {
         getItem(position).let { appointment ->
-            //holder.bind(appointment)
+            holder.bind(appointment)
         }
+    }
 
+    fun updateList(appointments: List<Appointments>){
+        appointmentsList.addAll(appointments)
+        submitList(appointmentsList.toMutableList())
     }
 }
 

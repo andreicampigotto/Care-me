@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Edson/AndroidStudioProjects/Care-me/Kotlin/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Edson/AndroidStudioProjects/Care-me/Kotlin/app/src/main/res/layout/card_login.xml" value="0.33" />
         <entry key="..\:/Users/Edson/AndroidStudioProjects/Care-me/Kotlin/app/src/main/res/layout/fragment_appointments.xml" value="0.25" />
+        <entry key="..\:/Users/Edson/AndroidStudioProjects/Care-me/Kotlin/app/src/main/res/layout/fragment_register_medical_appointment.xml" value="0.22" />
       </map>
     </option>
   </component>

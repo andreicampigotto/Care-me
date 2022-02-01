@@ -10,6 +10,5 @@ data class Allergy(
     @ColumnInfo(name = "idAllergy")
     val idAllergy: String,
     val allergyName: String?,
-    val allergyDescription: String?,
-    val drug: List<Drug>
+    val allergyDescription: String?
 )

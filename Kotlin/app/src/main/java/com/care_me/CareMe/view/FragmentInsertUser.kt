@@ -7,8 +7,9 @@ import com.care_me.CareMe.R
 import com.care_me.CareMe.databinding.FragmentProfileBinding
 import com.care_me.CareMe.model.User
 import dagger.hilt.EntryPoint
+import dagger.hilt.android.AndroidEntryPoint
 
-@EntryPoint
+@AndroidEntryPoint
 class FragmentInsertUser : Fragment(R.layout.fragment_profile) {
 
     private lateinit var binding: FragmentProfileBinding

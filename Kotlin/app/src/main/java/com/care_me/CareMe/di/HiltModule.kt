@@ -3,6 +3,7 @@ package com.care_me.CareMe.di
 import android.content.Context
 import com.care_me.CareMe.database.AppDatabase
 import com.care_me.CareMe.database.dao.AppointmentDAO
+import com.care_me.CareMe.repository.AppointmentRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,4 +18,9 @@ private object HiltModule {
     fun getAppointmentDao(@ApplicationContext context: Context): AppointmentDAO {
         return AppDatabase.getDatabase(context).getAppointmentDAO()
     }
+
+    @Provides
+    fun getAppointmentRepository(appointmentDAO: AppointmentDAO) =
+        AppointmentRepository(appointmentDAO)
+
 }

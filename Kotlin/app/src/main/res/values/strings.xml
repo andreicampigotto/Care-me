@@ -1,3 +1,44 @@
 <resources>
-    <string name="app_name">CareMe</string>
+    <string name="medical_records_app_name">CareMe</string>
+
+    <string name="medical_records_medication_label">Medicações:</string>
+    <string name="medical_records_weight_label">Peso:</string>
+    <string name="medical_records_blood_pressure_label">Última aferição de pressão:</string>
+    <string name="medical_records_height_label">Altura:</string>
+    <string name="medical_records_imc_label">IMC:</string>
+
+    <string name="register_medical_appointments_height">Altura</string>
+    <string name="register_medical_appointments_weight">Peso</string>
+    <string name="register_medical_appointments_date">12/12/2022</string>
+    <string name="register_medical_appointments_blood_pressure">Pressão arterial</string>
+    <string name="register_medical_appointments_comments">Observações</string>
+    <string name="register_medical_appointments_title">Como foi sua última consulta</string>
+    <string name="register_medical_appointments_doctor">Médico</string>
+    <string name="register_medical_appointments_button_new_drug">Medicação</string>
+    <string name="register_medical_appointments_button_new_allergy">Alergias</string>
+    <string name="register_medical_appointments_doctor_label">Médico</string>
+    <string name="register_medical_appointments_allergy_label">Alergias</string>
+    <string name="register_medical_appointments_disease_label">Doenças</string>
+    <string name="register_medical_appointments_button_new_disease">Doença</string>
+
+    <string name="register_profile_name">Nome</string>
+    <string name="register_profile_age">Idade</string>
+    <string name="register_profile_tel">Telefone</string>
+    <string name="register_profile_birthday">Aniversário</string>
+    <string name="register_profile_emergency_phone">Telefone de emergência</string>
+    <string name="register_profile_city">Cidade</string>
+    <string name="register_profile_country">País</string>
+    <string name="register_profile_blood_type">Tipo sanguíneo</string>
+
+    <string name="button_save">Salvar</string>
+    <string name="button_new_medical_records">inserir nova consulta</string>
+    <string name="allergy_name">Nome da alergia</string>
+    <string name="allergy_description">Descrição da alergia</string>
+    <string name="disease_name">Nome da Doença</string>
+    <string name="disease_description">Descrição da doença</string>
+
+    <string name="menu_historic">Historico</string>
+    <string name="menu_disease">Doenças</string>
+    <string name="menu_profile">Perfil</string>
+
 </resources>

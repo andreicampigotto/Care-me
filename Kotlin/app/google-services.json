@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "98357483700",
+    "firebase_url": "https://care-me-542e9-default-rtdb.firebaseio.com",
+    "project_id": "care-me-542e9",
+    "storage_bucket": "care-me-542e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98357483700:android:7fcbb25786e7c569235fe1",
+        "android_client_info": {
+          "package_name": "com.care_me.CareMe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98357483700-64q2f9qv5oirruh295bqg191vtadj37r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaO8jmdt7gRFydnzVVykq5TLKgnFhwwNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98357483700-64q2f9qv5oirruh295bqg191vtadj37r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

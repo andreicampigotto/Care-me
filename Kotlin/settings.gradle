@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "CareMe"
 include ':app'
+include ':componentsLib'

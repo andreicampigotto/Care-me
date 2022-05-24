@@ -4,14 +4,14 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.care_me.CareMe.model.Appointment
+import com.care_me.CareMe.model.Doctor
 
 @Dao
-interface AppointmentDAO {
+interface DoctorDAO {
 
-    @Query("SELECT * FROM appointment")
-    fun getAppointments(): List<Appointment>
+    @Query("SELECT * FROM doctor")
+    fun getDoctors(): List<Doctor>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun setAppointment(appointment: Appointment)
+    fun setDoctor(doctor: Doctor)
 }

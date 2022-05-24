@@ -4,20 +4,18 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.care_me.CareMe.model.Appointments
+import com.care_me.CareMe.model.Appointment
 import com.care_me.CareMe.repository.AppointmentRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 @HiltViewModel
 class AppointmentsViewModel @Inject constructor(private val repository: AppointmentRepository) :
     ViewModel() {
 
-    private val _appointmentList = MutableLiveData<List<Appointments>>()
-    val appointmentList: LiveData<List<Appointments>> = _appointmentList
+    private val _appointmentList = MutableLiveData<List<Appointment>>()
+    val appointmentList: LiveData<List<Appointment>> = _appointmentList
 
     fun getAppointments() {
         viewModelScope.launch {
@@ -25,9 +23,9 @@ class AppointmentsViewModel @Inject constructor(private val repository: Appointm
         }
     }
 
-    fun setAppointment(appointments: Appointments) {
+    fun setAppointment(appointment: Appointment) {
         viewModelScope.launch {
-            repository.setAppointment(appointments)
+            repository.setAppointment(appointment)
         }
     }
 }

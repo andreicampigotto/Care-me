@@ -6,13 +6,12 @@ import androidx.room.PrimaryKey
 import java.util.*
 
 @Entity
-data class Appointments(
+data class Appointment(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "idAppointments")
     val idAppointments: Int,
     val appointment: String,
     val weight: Float,
-    val height: Int,
     val bloodPressure: String,
     val comments: String?,
     val doctor: String?,

@@ -13,9 +13,7 @@ data class User(
     val icon: String?,
     val fullName: String,
     val birthday: Int?,
-    val phone: String?,
     val emergencyPhone: String?,
-    val city: String?,
-    val country: String?,
-    val bloodType: String?
+    val bloodType: String?,
+    val height: Float?
 )

@@ -21,14 +21,14 @@ class FragmentInsertDisease: Fragment(R.layout.fragment_insert_disease) {
     }
 
     private fun setValueToFields(disease: Disease) {
-        binding.fragmentDiseaseName.editText?.setText(disease.diseaseName)
-        binding.fragmentDiseaseDescription.editText?.setText(disease.diseaseDescription)
+        binding.incDisease.includeDefaultInsertName.editText?.setText(disease.diseaseName)
+        binding.incDisease.includeDefaultInsertDescription.editText?.setText(disease.diseaseDescription)
     }
 
     private fun settingForm() {
-        binding.fragmentDiseaseButtonSave.setOnClickListener {
-            val diseaseName = binding.fragmentDiseaseName.editText
-            val diseaseDescription = binding.fragmentDiseaseDescription.editText
+        binding.incDisease.includeDefaultInsertButtonSave.setOnClickListener {
+            val diseaseName = binding.incDisease.includeDefaultInsertName.editText
+            val diseaseDescription = binding.incDisease.includeDefaultInsertDescription.editText
 
             if (diseaseName?.text?.isNotEmpty()!! && diseaseDescription?.text.toString().isNotEmpty()) {
 //                viewmodel
@@ -38,8 +38,8 @@ class FragmentInsertDisease: Fragment(R.layout.fragment_insert_disease) {
     }
 
     private fun clearFields() {
-        binding.fragmentDiseaseName.editText?.setText("")
-        binding.fragmentDiseaseDescription.editText?.setText("")
+        binding.incDisease.includeDefaultInsertName.editText?.setText("")
+        binding.incDisease.includeDefaultInsertDescription.editText?.setText("")
 
     }
 }

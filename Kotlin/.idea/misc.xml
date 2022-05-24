@@ -3,12 +3,38 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.30092592592592593" />
         <entry key="..\:/Users/Edson/AndroidStudioProjects/Care-me/Kotlin/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Edson/AndroidStudioProjects/Care-me/Kotlin/app/src/main/res/layout/card_login.xml" value="0.33" />
         <entry key="..\:/Users/Edson/AndroidStudioProjects/Care-me/Kotlin/app/src/main/res/layout/fragment_appointments.xml" value="0.25" />
         <entry key="..\:/Users/Edson/AndroidStudioProjects/Care-me/Kotlin/app/src/main/res/layout/fragment_register_medical_appointment.xml" value="0.22" />
         <entry key="..\:/Users/Edson/AndroidStudioProjects/Care-me/Kotlin/app/src/main/res/layout/main_activity.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Edson/AndroidStudioProjects/Care-me/Kotlin/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20416666666666666" />
+        <entry key="app/src/main/res/drawable/ic_baseline_sick_24.xml" value="0.1625" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/botton_navigation.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/card_insert_profile.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/card_login.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/card_medical_appointments.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/card_register_medical_appointment.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/card_register_profile.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/date_picker.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_appointments.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_disease.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_get_profile.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/fragment_insert_allergy.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_insert_disease.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_insert_drug.xml" value="0.38995513916015623" />
+        <entry key="app/src/main/res/layout/fragment_medical_appointment.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_register_medical_appointment.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/include_button_save.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/include_default_inserts.xml" value="0.2601851851851852" />
+        <entry key="app/src/main/res/layout/include_listas.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/include_medical_appointment_title.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/main_activity.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/main_fragment.xml" value="0.3098958333333333" />
       </map>
     </option>
   </component>

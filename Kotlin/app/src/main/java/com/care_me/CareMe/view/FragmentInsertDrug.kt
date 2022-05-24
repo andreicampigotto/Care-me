@@ -21,14 +21,14 @@ class FragmentInsertDrug : Fragment(R.layout.fragment_insert_drug) {
     }
 
     private fun setValueToFields(drug: Drug) {
-        binding.fragmentDrugName.editText?.setText(drug.drugName)
-        binding.fragmentDrugDescription.editText?.setText(drug.drugDescription)
+        binding.incDrug.includeDefaultInsertName.editText?.setText(drug.drugName)
+        binding.incDrug.includeDefaultInsertDescription.editText?.setText(drug.drugDescription)
     }
 
     private fun settingForm() {
-        binding.fragmentDrugButtonSave.setOnClickListener {
-            val allergyName = binding.fragmentDrugName.editText
-            val allergyDescription = binding.fragmentDrugDescription.editText
+        binding.incDrug.includeDefaultInsertButtonSave.setOnClickListener {
+            val allergyName = binding.incDrug.includeDefaultInsertName.editText
+            val allergyDescription = binding.incDrug.includeDefaultInsertDescription.editText
 
             if (allergyName?.text?.isNotEmpty()!! && allergyDescription?.text.toString()
                     .isNotEmpty()
@@ -40,8 +40,8 @@ class FragmentInsertDrug : Fragment(R.layout.fragment_insert_drug) {
     }
 
     private fun clearFields() {
-        binding.fragmentDrugName.editText?.setText("")
-        binding.fragmentDrugDescription.editText?.setText("")
+        binding.incDrug.includeDefaultInsertName.editText?.setText("")
+        binding.incDrug.includeDefaultInsertDescription.editText?.setText("")
 
     }
 }

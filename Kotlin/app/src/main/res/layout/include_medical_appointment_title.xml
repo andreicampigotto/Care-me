@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/inc_card_appointments_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="17/07/2022 " />
+
+    <TextView
+        android:id="@+id/inc_card_appointments_blood_pressure_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:text="@string/medical_records_blood_pressure_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inc_card_appointments_date" />
+
+    <TextView
+        android:id="@+id/inc_card_appointments_blood_pressure_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/inc_card_appointments_blood_pressure_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/inc_card_appointments_blood_pressure_label"
+        app:layout_constraintTop_toTopOf="@id/inc_card_appointments_blood_pressure_label"
+        tools:text="12/8" />
+
+    <TextView
+        android:id="@+id/inc_card_appointments_weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:text="@string/medical_records_weight_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inc_card_appointments_blood_pressure_label" />
+
+    <TextView
+        android:id="@+id/inc_card_appointments_weight_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/inc_card_appointments_weight_label"
+        app:layout_constraintEnd_toStartOf="@id/inc_card_appointments_height_label"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/inc_card_appointments_weight_label"
+        app:layout_constraintTop_toTopOf="@id/inc_card_appointments_weight_label"
+        tools:text="72kg" />
+
+    <TextView
+        android:id="@+id/inc_card_appointments_height_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:text="@string/medical_records_height_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inc_card_appointments_blood_pressure_label" />
+
+    <TextView
+        android:id="@+id/inc_card_appointments_height_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/inc_card_appointments_height_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/inc_card_appointments_height_label"
+        app:layout_constraintTop_toTopOf="@id/inc_card_appointments_height_label"
+        tools:text="72kg" />
+
+    <TextView
+        android:id="@+id/inc_card_appointments_imc_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:padding="4dp"
+        android:text="@string/medical_records_imc_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/inc_card_appointments_weight_label"
+        app:layout_constraintEnd_toStartOf="@id/inc_card_appointments_imc_value"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/inc_card_appointments_height_value"
+        app:layout_constraintTop_toTopOf="@id/inc_card_appointments_weight_label" />
+
+    <TextView
+        android:id="@+id/inc_card_appointments_imc_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/inc_card_appointments_imc_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/inc_card_appointments_imc_label"
+        tools:text="72kg" />
+
+    <TextView
+        android:id="@+id/inc_card_appointments_doctor_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:padding="4dp"
+        android:text="@string/register_medical_appointments_doctor_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inc_card_appointments_weight_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/inc_card_appointments_doctor_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/inc_card_appointments_doctor_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/inc_card_appointments_doctor_label"
+        app:layout_constraintTop_toTopOf="@+id/inc_card_appointments_doctor_label"
+        tools:text="teste teste da silva" />
+</androidx.constraintlayout.widget.ConstraintLayout>

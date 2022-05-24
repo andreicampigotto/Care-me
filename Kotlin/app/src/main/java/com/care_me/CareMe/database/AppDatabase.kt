@@ -8,7 +8,7 @@ import com.care_me.CareMe.database.dao.AppointmentDAO
 import com.care_me.CareMe.model.*
 
 @Database(
-    entities = [User::class, Drug::class, Allergy::class, Disease::class, Doctor::class, Appointments::class],
+    entities = [User::class, Drug::class, Allergy::class, Disease::class, Doctor::class, Appointment::class],
     version = 1
 )
 abstract class AppDatabase : RoomDatabase() {

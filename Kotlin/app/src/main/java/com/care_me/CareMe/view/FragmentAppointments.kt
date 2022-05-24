@@ -32,9 +32,9 @@ class FragmentAppointments : Fragment(R.layout.fragment_appointments) {
     }
 
     private fun setupObservers(){
-        viewModel.appointmentList.observe(viewLifecycleOwner, {
+        viewModel.appointmentList.observe(viewLifecycleOwner) {
             appointmentAdapter.updateList(it)
-        })
+        }
     }
 
     private fun setupRecyclerView() = with(binding.rvAppointments) {

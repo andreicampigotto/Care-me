@@ -7,11 +7,12 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.care_me.CareMe.R
 import com.care_me.CareMe.databinding.CardMedicalAppointmentsBinding
-import com.care_me.CareMe.model.Appointments
+import com.care_me.CareMe.model.Appointment
+import com.care_me.CareMe.model.User
 
 class AppointmentAdapter :
-    ListAdapter<Appointments, AppointmentViewHolder>(AppointmentDiffCallback()) {
-    private val appointmentsList = mutableListOf<Appointments>()
+    ListAdapter<Appointment, AppointmentViewHolder>(AppointmentDiffCallback()) {
+    private val appointmentsList = mutableListOf<Appointment>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AppointmentViewHolder {
         LayoutInflater.from(parent.context)
             .inflate(R.layout.card_medical_appointments, parent, false).apply {
@@ -20,12 +21,12 @@ class AppointmentAdapter :
     }
 
     override fun onBindViewHolder(holder: AppointmentViewHolder, position: Int) {
-        getItem(position).let { appointment ->
-            holder.bind(appointment)
+        getItem(position).let {
+            //holder.bind(it)
         }
     }
 
-    fun updateList(appointments: List<Appointments>){
+    fun updateList(appointments: List<Appointment>, users: List<User>) {
         appointmentsList.addAll(appointments)
         submitList(appointmentsList.toMutableList())
     }
@@ -36,11 +37,11 @@ class AppointmentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) 
     private val binding: CardMedicalAppointmentsBinding =
         CardMedicalAppointmentsBinding.bind(itemView)
 
-    fun bind(appointments: Appointments) {
-        binding.cardMedicalAppointmentsDate.text = appointments.presentDate.toString()
-        binding.cardMedicalAppointmentsDoctorValue.text = appointments.doctor
-        binding.cardMedicalAppointmentsHeightLabel.text = appointments.bloodPressure
-        binding.cardMedicalAppointmentsHeightValue.text = appointments.height.toString()
-        binding.cardMedicalAppointmentsWeightValue.text = appointments.weight.toString()
+    fun bind(appointment: Appointment, user: User) {
+        binding.includeTitle.incCardAppointmentsDate.text = appointment.presentDate
+        binding.includeTitle.incCardAppointmentsDoctorValue.text = appointment.doctor
+        binding.includeTitle.incCardAppointmentsBloodPressureValue.text = appointment.bloodPressure
+        binding.includeTitle.incCardAppointmentsWeightValue.text = appointment.weight.toString()
+        binding.includeTitle.incCardAppointmentsHeightValue.text = user.height.toString()
     }
 }

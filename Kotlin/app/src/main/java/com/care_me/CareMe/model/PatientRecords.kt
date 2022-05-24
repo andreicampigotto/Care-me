@@ -13,7 +13,7 @@ data class PatientRecord (
     val user: User,
     val disease: List<Disease>,
     val medicalVisit: List<Date>,
-    val appointments: List<Appointments>,
+    val appointments: List<Appointment>,
     val allergy: List<Allergy>,
     val drug: List<Drug>
 )

@@ -17,18 +17,20 @@ class FragmentInsertAllergy : Fragment(R.layout.fragment_insert_allergy) {
         super.onViewCreated(view, savedInstanceState)
 
         binding = FragmentInsertAllergyBinding.bind(view)
+        //setValueToFields()
 
     }
 
+
     private fun setValueToFields(allergy: Allergy) {
-        binding.fragmentAllergyName.editText?.setText(allergy.allergyName)
-        binding.fragmentAllergyDescription.editText?.setText(allergy.allergyDescription)
+        binding.incAllergy.includeDefaultInsertName.editText?.setText(allergy.allergyName)
+        binding.incAllergy.includeDefaultInsertDescription.editText?.setText(allergy.allergyDescription)
     }
 
     private fun settingForm() {
-        binding.fragmentAllergyButtonSave.setOnClickListener {
-            val allergyName = binding.fragmentAllergyName.editText
-            val allergyDescription = binding.fragmentAllergyDescription.editText
+        binding.incAllergy.includeDefaultInsertButtonSave.setOnClickListener {
+            val allergyName = binding.incAllergy.includeDefaultInsertName.editText
+            val allergyDescription = binding.incAllergy.includeDefaultInsertDescription.editText
 
             if (allergyName?.text?.isNotEmpty()!! && allergyDescription?.text.toString()
                     .isNotEmpty()
@@ -40,8 +42,8 @@ class FragmentInsertAllergy : Fragment(R.layout.fragment_insert_allergy) {
     }
 
     private fun clearFields() {
-        binding.fragmentAllergyName.editText?.setText("")
-        binding.fragmentAllergyDescription.editText?.setText("")
+        binding.incAllergy.includeDefaultInsertName.editText?.setText("")
+        binding.incAllergy.includeDefaultInsertDescription.editText?.setText("")
 
     }
 }

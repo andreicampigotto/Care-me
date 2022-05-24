@@ -3,7 +3,7 @@
 
     <string name="medical_records_medication_label">Medicações:</string>
     <string name="medical_records_weight_label">Peso:</string>
-    <string name="medical_records_blood_pressure_label">Última aferição de pressão:</string>
+    <string name="medical_records_blood_pressure_label">Pressão arterial:</string>
     <string name="medical_records_height_label">Altura:</string>
     <string name="medical_records_imc_label">IMC:</string>
 
@@ -25,7 +25,7 @@
     <string name="register_profile_age">Idade</string>
     <string name="register_profile_tel">Telefone</string>
     <string name="register_profile_birthday">Aniversário</string>
-    <string name="register_profile_emergency_phone">Telefone de emergência</string>
+    <string name="register_profile_emergency_phone">Telefone para emergência</string>
     <string name="register_profile_city">Cidade</string>
     <string name="register_profile_country">País</string>
     <string name="register_profile_blood_type">Tipo sanguíneo</string>
@@ -34,8 +34,8 @@
     <string name="button_new_medical_records">inserir nova consulta</string>
     <string name="allergy_name">Nome da alergia</string>
     <string name="allergy_description">Descrição da alergia</string>
-    <string name="disease_name">Nome da Doença</string>
-    <string name="disease_description">Descrição da doença</string>
+    <string name="include_default_name">Nome</string>
+    <string name="include_default_description">Descrição</string>
 
     <string name="menu_historic">Historico</string>
     <string name="menu_disease">Doenças</string>

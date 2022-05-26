@@ -6,9 +6,14 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Allergy(
-    @PrimaryKey
-    @ColumnInfo(name = "idAllergy")
-    val idAllergy: String,
-    val allergyName: String?,
-    val allergyDescription: String?
+
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "allergy_id")
+    val allergy_id: Int = 0,
+
+    @ColumnInfo(name = "name")
+    val name: String?,
+
+    @ColumnInfo(name = "description")
+    val description: String?
 )

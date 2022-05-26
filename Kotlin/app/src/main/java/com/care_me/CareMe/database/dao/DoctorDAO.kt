@@ -9,7 +9,7 @@ import com.care_me.CareMe.model.Doctor
 @Dao
 interface DoctorDAO {
 
-    @Query("SELECT * FROM doctor")
+    @Query("SELECT * FROM Doctor")
     fun getDoctors(): List<Doctor>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)

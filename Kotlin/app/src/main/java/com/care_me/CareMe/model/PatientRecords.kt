@@ -7,7 +7,7 @@ import java.util.*
 
 @Entity
 data class PatientRecord (
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "idPatientRecord")
     val idPatientRecord: String,
     val user: User,

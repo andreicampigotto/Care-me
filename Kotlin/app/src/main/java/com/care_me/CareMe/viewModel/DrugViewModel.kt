@@ -11,7 +11,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class DugViewModel @Inject constructor(private val repository: DrugRepository) :
+class DrugViewModel @Inject constructor(private val repository: DrugRepository) :
     ViewModel() {
 
     private val _drugList = MutableLiveData<List<Drug>>()

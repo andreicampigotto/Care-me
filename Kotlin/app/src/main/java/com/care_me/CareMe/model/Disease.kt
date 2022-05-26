@@ -6,10 +6,14 @@ import androidx.room.PrimaryKey
 
 @Entity
 class Disease(
-    @PrimaryKey
-    @ColumnInfo(name = "idDisease")
-    val idDisease: String,
-    val diseaseName: String?,
-    val diseaseDescription: String?,
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "disease_id")
+    val disease_id: Int = 0,
+
+    @ColumnInfo(name = "name")
+    val name: String?,
+
+    @ColumnInfo(name = "description")
+    val description: String?,
 
     )

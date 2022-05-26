@@ -7,7 +7,6 @@ import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.care_me.CareMe.R
 import com.care_me.CareMe.adapters.AppointmentAdapter
 import com.care_me.CareMe.databinding.FragmentAppointmentsBinding
@@ -31,9 +30,9 @@ class FragmentAppointments : Fragment(R.layout.fragment_appointments) {
         viewModel.getAppointments()
     }
 
-    private fun setupObservers(){
+    private fun setupObservers() {
         viewModel.appointmentList.observe(viewLifecycleOwner) {
-            appointmentAdapter.updateList(it)
+            //appointmentAdapter.updateList(it)
         }
     }
 
@@ -41,10 +40,12 @@ class FragmentAppointments : Fragment(R.layout.fragment_appointments) {
         adapter = appointmentAdapter
         layoutManager = LinearLayoutManager(requireContext())
     }
+
+    private fun View.hideSoftInput() {
+        val inputMethodManager =
+            context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(windowToken, 0)
+    }
 }
 
-private fun View.hideSoftInput() {
-    val inputMethodManager =
-        context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-    inputMethodManager.hideSoftInputFromWindow(windowToken, 0)
-}
+

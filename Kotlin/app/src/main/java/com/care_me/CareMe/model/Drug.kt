@@ -6,10 +6,16 @@ import androidx.room.PrimaryKey
 
 @Entity
 data class Drug(
-    @PrimaryKey
-    @ColumnInfo(name = "idDrug")
-    val idDrug: String,
-    val drugName: String?,
-    val drugDescription: String?,
-    val continuousUse: Boolean = true
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "drug_id")
+    val drug_id: Int = 0,
+
+    @ColumnInfo(name = "name")
+    val name: String?,
+
+    @ColumnInfo(name = "description")
+    val description: String?,
+
+    @ColumnInfo(name = "continuous")
+    val continuous: Boolean = true
 )
